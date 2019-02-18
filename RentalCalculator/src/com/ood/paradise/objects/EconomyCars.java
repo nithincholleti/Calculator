@@ -3,6 +3,8 @@ package com.ood.paradise.objects;
 import java.time.DayOfWeek;
 import java.time.temporal.ChronoUnit;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -14,7 +16,7 @@ public class EconomyCars extends Vehicle {
 	public EconomyCars(float inputDiscountPercentage, BasePriceForCars base) {
 		this.midSizeCar = base;
 		this.discountCostPercentage = inputDiscountPercentage;
-		this.type = "EconomyCar";
+		this.type = VehicleEnum.ECONOMYCAR;
 		calculatePerDayRate();
 	}
 

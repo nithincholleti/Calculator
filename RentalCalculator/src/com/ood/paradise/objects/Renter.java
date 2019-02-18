@@ -2,6 +2,8 @@ package com.ood.paradise.objects;
 
 import java.util.List;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -48,7 +50,7 @@ public class Renter {
 			/*
 			 * adding Hazard Insurance
 			 */
-			if (veh.getType().equals("Motorcycle")) {
+			if (veh.getType().equals(VehicleEnum.MOTORCYCLE)) {
 				if (age >= 18 && age <= 25) {
 					summation = summation + 50;
 				} else if (age >= 26 && age <= 32) {
@@ -59,10 +61,13 @@ public class Renter {
 					summation = summation + 0;
 				}
 			}
+			if (veh.getType().equals(VehicleEnum.SUV)) {
+				isSUVRented = true;
+			}
 			/*
 			 * If renter rents SUV then first Bicycle is free. Subtracting it from total
 			 */
-			if (veh.getType().equals("Bicycle") && isSUVRented == true && isfirstBicycle == false) {
+			if (veh.getType().equals(VehicleEnum.BICYCLE) && isSUVRented == true && isfirstBicycle == false) {
 				isfirstBicycle = true;
 				summation = summation - veh.getTotalAmountForDates();
 			}

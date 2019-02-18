@@ -3,6 +3,8 @@ package com.ood.paradise.objects;
 import java.time.DayOfWeek;
 import java.time.temporal.ChronoUnit;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -25,7 +27,7 @@ public class Suv extends Vehicle {
 		this.midSizeCar = car;
 		this.permiumCostPercentage = inputPremiumPercentage;
 		this.additionalCost = inputAdditionalCost;
-		this.type = "Suv";
+		this.type = VehicleEnum.SUV;
 		calculatePerDayRate();
 	}
 

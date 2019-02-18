@@ -4,6 +4,8 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.Date;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -16,7 +18,7 @@ public abstract class Vehicle {
 	protected float permiumCostPercentage;
 	protected float discountCostPercentage;
 	protected float totalAmountForDates;
-	protected String type;
+	protected VehicleEnum type;
 
 	/*
 	 * Extending class will implement logic to calculate total cost for given dates
@@ -30,7 +32,7 @@ public abstract class Vehicle {
 	public abstract void calculatePerDayRate();
 
 	
-	public String getType() {
+	public VehicleEnum getType() {
 		return type;
 	}
 

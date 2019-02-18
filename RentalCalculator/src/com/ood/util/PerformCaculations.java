@@ -52,7 +52,9 @@ public class PerformCaculations {
 				if (Validation.validateUserInput(ApplicationConstants.DATE, endDate)) {
 					midsizeCar.setEndDate(LocalDate.parse(endDate));
 				}
-				userList.add(midsizeCar);
+				if (Validation.validateUserInputDates(ApplicationConstants.DAYLIMIT, startDate, endDate)) {
+					userList.add(midsizeCar);
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.exit(1);
@@ -89,6 +91,9 @@ public class PerformCaculations {
 					if (isCarTakenOffRoad.equalsIgnoreCase("Y")) {
 						((Suv) SUVCar).setCarTakenOffRoad(true);
 					}
+				}
+				if (Validation.validateUserInputDates(ApplicationConstants.DAYLIMIT, startDate, endDate)) {
+					userList.add(SUVCar);
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -141,7 +146,9 @@ public class PerformCaculations {
 						((Limousines) LimousineCar).setChampagneIncluded(false);
 					}
 				}
-				userList.add(LimousineCar);
+				if (Validation.validateUserInputDates(ApplicationConstants.DAYLIMIT, startDate, endDate)) {
+					userList.add(LimousineCar);
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.exit(1);

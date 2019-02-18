@@ -8,6 +8,8 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -18,7 +20,7 @@ public class MidsizeCars extends Vehicle {
 		this.baseRate = inputBaseRate;
 		this.permiumCostPercentage = inputPremiumPercentage;
 		this.discountCostPercentage = inputDiscountPercentage;
-		this.type = "MidsizeCar";
+		this.type = VehicleEnum.MIDSIZECAR;
 		calculatePerDayRate();
 	}
 

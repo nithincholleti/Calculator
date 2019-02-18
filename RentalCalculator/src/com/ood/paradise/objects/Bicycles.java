@@ -2,6 +2,8 @@ package com.ood.paradise.objects;
 
 import java.time.temporal.ChronoUnit;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -11,7 +13,7 @@ public class Bicycles extends Vehicle {
 
 	public Bicycles(float inputBaseRate) {
 		this.baseRate = inputBaseRate;
-		this.type = "Bicycle";
+		this.type = VehicleEnum.BICYCLE;
 	}
 
 	@Override

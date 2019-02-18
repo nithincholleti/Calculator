@@ -40,7 +40,7 @@ public class VehicleFactory {
 		} else if (invehicleType.equals(VehicleEnum.ECONOMYCAR)) {
 			return new EconomyCars(50, base);
 		} else if (invehicleType.equals(VehicleEnum.SUV)) {
-			new Suv(50, base, 15);
+			return new Suv(50, base, 15);
 		} else if (invehicleType.equals(VehicleEnum.LUXURYCAR)) {
 			return new LuxuryCars(base, 100);
 		} else if (invehicleType.equals(VehicleEnum.LIMOUSINE)) {

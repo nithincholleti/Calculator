@@ -1,5 +1,7 @@
 package com.ood.paradise.objects;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -24,7 +26,7 @@ public class Jetskis extends Vehicle{
 
 	public Jetskis(float inBaseRate) {
 		this.baseRate = inBaseRate;
-		this.type = "Jetski";
+		this.type = VehicleEnum.JETSKIS;
 	}
 
 	public void calculateTotalAmount() {

@@ -3,6 +3,8 @@ package com.ood.paradise.objects;
 
 import java.time.temporal.ChronoUnit;
 
+import com.ood.util.VehicleEnum;
+
 /**
  * @author nithin
  *
@@ -11,7 +13,7 @@ public class Motorcycles extends Vehicle {
 	
 	public Motorcycles(float inputBaseRate) {
 		this.baseRate = inputBaseRate;
-		this.type = "Motorcycle";
+		this.type = VehicleEnum.MOTORCYCLE;
 	}
 
 	public void calculateTotalAmount() {
