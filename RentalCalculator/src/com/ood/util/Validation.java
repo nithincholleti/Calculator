@@ -58,7 +58,7 @@ public class Validation {
 					throw new InvalidAgeException(ApplicationConstants.ERRORMESSAGEAGE);
 				}
 			} catch (Exception e) {
-				throw new CustomExceptions(ApplicationConstants.ERRORMESSAGE);
+				throw new CustomExceptions(ApplicationConstants.ERRORMESSAGEAGE);
 			}
 		}
 
