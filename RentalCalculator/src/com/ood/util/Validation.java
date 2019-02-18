@@ -77,6 +77,6 @@ public class Validation {
 				throw new DayLimitException(ApplicationConstants.ERRORMEDAY);
 			}
 		}
-		return false;
+		return true;
 	}
 }

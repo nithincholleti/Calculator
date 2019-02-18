@@ -34,8 +34,8 @@ public class ParadiseCalculator {
 		PerformCaculations calculations = new PerformCaculations();
 		List<Vehicle> userList = new ArrayList<Vehicle>();
 
-		System.out.println("Welcome To Paradise Rental Calculator");
-		System.out.println("Please enter renter's age ");
+		System.out.println(ApplicationConstants.WELCOME);
+		System.out.println(ApplicationConstants.AGECONFIRM);
 		Scanner sc = new Scanner(System.in);
 		String value = sc.nextLine();
 		String loopChar = "Y";
@@ -49,7 +49,7 @@ public class ParadiseCalculator {
 				while (loopChar.equalsIgnoreCase("Y")) {
 					// start reading input from user
 					calculations.consoleInputAndCalculation(userList);
-					System.out.println("Do you want to add more cars for the renter (Y/N) \r\n");
+					System.out.println("Do you want to add more vehicles for the renter (Y/N) \r\n");
 					// check if user still need to add vehicles
 					loopChar = sc.nextLine();
 				}

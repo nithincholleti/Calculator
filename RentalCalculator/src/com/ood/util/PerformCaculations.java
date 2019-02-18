@@ -186,7 +186,7 @@ public class PerformCaculations {
 	 */
 	public void consoleInputAndCalculation(List<Vehicle> userList) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Select one car from the list to start calculation");
+		System.out.println("Select one vecile from the list to start calculation");
 		System.out.println("1. Midsize car\r\n" + "2. Economy Car\r\n" + "3. SUV\r\n" + "4. Luxury Car\r\n"
 				+ "5. Limousine\r\n" + "6. Bicycle\r\n" + "7. Scooter\r\n" + "8. Motorcycle\r\n" + "9. Jetskis ");
 

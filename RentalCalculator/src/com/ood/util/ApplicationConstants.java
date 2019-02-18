@@ -6,6 +6,12 @@ package com.ood.util;
  */
 
 public class ApplicationConstants {
+	
+	/*
+	 * Application Messages
+	 */
+	public static final String WELCOME = "Welcome To Paradise Rental Calculator";
+	public static final String AGECONFIRM = "Please enter renter's age ";
 	/*
 	 * validation util constants
 	 */
