@@ -7,17 +7,6 @@ package com.ood.util;
 
 public class ApplicationConstants {
 	/*
-	public static final int MIDSIZECAR = 1;
-	public static final int ECONOMYCAR = 2;
-	public static final int SUV = 3;
-	public static final int LUXURYCAR = 4;
-	public static final int LIMOUSINE = 5;
-	public static final int BICYCLE = 6;
-	public static final int SCOOTER = 7;
-	public static final int MOTORCYCLE = 8;
-	public static final int JETSKIS = 9;
-	*/
-	/*
 	 * validation util constants
 	 */
 	public static final String VEHICLETYPE = "VEHICLE";
