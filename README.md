@@ -11,6 +11,7 @@ Following is the list of vehicles
 •	Scooters   
 •	Motorcycles  
 •	Jet Skis  
+
 Each type of vehicle rents at a different rate. Due to differences in demand on certain days of the week, the rental price is increased on Friday and Saturday and discounted on Sunday. 
 
 Dependencies  
