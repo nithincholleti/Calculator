@@ -16,3 +16,6 @@ Each type of vehicle rents at a different rate. Due to differences in demand on 
 
 Dependencies  
 •	Java 8
+
+Entry Point  
+Main method in ParadiseCalculator.java
